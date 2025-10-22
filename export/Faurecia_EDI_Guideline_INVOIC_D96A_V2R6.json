@@ -1,0 +1,3106 @@
+[
+    {
+        "segment": "ALI",
+        "description": "Additional information",
+        "elements": [
+            {
+                "champ": "3239",
+                "description": "Country of origin, coded",
+                "format": "C an..3",
+                "valeur": "+FR’",
+                "usage": ""
+            }
+        ]
+    },
+    {
+        "segment": "BGM",
+        "description": "Beginning of message",
+        "elements": [
+            {
+                "groupe": "C002",
+                "description": "Document/message name",
+                "champs": [
+                    {
+                        "champ": "1001",
+                        "description": "Document/message name, coded",
+                        "format": "M an..3",
+                        "valeur": "+380",
+                        "usage": "380 = Commercial Invoice\n381 = Credit Note"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "1000",
+                        "description": "Document/message name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C106",
+                "description": "Document/message identification",
+                "champs": [
+                    {
+                        "champ": "1004",
+                        "description": "Document/message number",
+                        "format": "M an..35",
+                        "valeur": "+9010203476",
+                        "usage": "A document number identifying this Invoice"
+                    },
+                    {
+                        "champ": "1056",
+                        "description": "version",
+                        "format": "C an..9",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "1060",
+                        "description": "Revision number",
+                        "format": "C an..6",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "1225",
+                        "description": "Message function, coded",
+                        "format": "C an..3",
+                        "valeur": "+9’",
+                        "usage": "9 = Original 5 = Duplicated"
+                    },
+                    {
+                        "champ": "4343",
+                        "description": "Response type, coded",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "CTA",
+        "description": "Contact information",
+        "elements": [
+            {
+                "champ": "3139",
+                "description": "Contact function, coded",
+                "format": "C an..3",
+                "valeur": "C",
+                "usage": "+IC"
+            },
+            {
+                "groupe": "C056",
+                "description": "Department or employee details",
+                "champs": [
+                    {
+                        "champ": "3413",
+                        "description": "Department or employee identification",
+                        "format": "C an..17",
+                        "valeur": "C",
+                        "usage": "+"
+                    },
+                    {
+                        "champ": "3412",
+                        "description": "Department or employee",
+                        "format": "C an..35",
+                        "valeur": "C",
+                        "usage": ":WEIDNER'"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "CUX",
+        "description": "Currencies",
+        "elements": [
+            {
+                "groupe": "C504",
+                "description": "Currency details",
+                "champs": [
+                    {
+                        "champ": "6347",
+                        "description": "Currency details qualifier",
+                        "format": "M an..3",
+                        "valeur": "+2",
+                        "usage": "2 = reference currency"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency code",
+                        "format": "C an..3",
+                        "valeur": ":EUR",
+                        "usage": "Invoicing currency"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C504",
+                "description": "Currency details",
+                "champs": [
+                    {
+                        "champ": "6347",
+                        "description": "Currency details qualifier",
+                        "format": "M an..3",
+                        "valeur": "+3",
+                        "usage": "3 = target currency"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency code",
+                        "format": "C an..3",
+                        "valeur": ":EUR",
+                        "usage": "Target Currency specifies the currency that has to be"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = home currency\n11 = payment currency"
+                    },
+                    {
+                        "champ": "5402",
+                        "description": "Currency exchange rate",
+                        "format": "C n…12",
+                        "valeur": "",
+                        "usage": "Used when C504#2. Is used with 4 decimals"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "DTM",
+        "description": "Date/time/period",
+        "elements": [
+            {
+                "groupe": "C507",
+                "description": "Date/time/period",
+                "champs": [
+                    {
+                        "champ": "2005",
+                        "description": "Date/time/period qualifier",
+                        "format": "M an..3",
+                        "valeur": "+137",
+                        "usage": "137 = Document/message date/time"
+                    },
+                    {
+                        "champ": "2380",
+                        "description": "Date/time/period",
+                        "format": "C an..35",
+                        "valeur": ": 20170324",
+                        "usage": "Message Date"
+                    },
+                    {
+                        "champ": "2379",
+                        "description": "Date/time/period format qualifier",
+                        "format": "C an..3",
+                        "valeur": ":102'",
+                        "usage": "102 = CCYYMMDD"
+                    }
+                ]
+            },
+            {
+                "groupe": "C507",
+                "description": "Date/time/period",
+                "champs": [
+                    {
+                        "champ": "2005",
+                        "description": "Date/time/period qualifier",
+                        "format": "M an..3",
+                        "valeur": "+137",
+                        "usage": "131 = Tax Reporting date"
+                    },
+                    {
+                        "champ": "2380",
+                        "description": "Date/time/period",
+                        "format": "C an..35",
+                        "valeur": ": 20170324",
+                        "usage": "Message Date"
+                    },
+                    {
+                        "champ": "2379",
+                        "description": "Date/time/period format qualifier",
+                        "format": "C an..3",
+                        "valeur": ":102'",
+                        "usage": "102 = CCYYMMDD"
+                    }
+                ]
+            },
+            {
+                "groupe": "C507",
+                "description": "Date/time/period",
+                "champs": [
+                    {
+                        "champ": "2005",
+                        "description": "Date/time/period qualifier",
+                        "format": "M an..3",
+                        "valeur": "M",
+                        "usage": "+134"
+                    },
+                    {
+                        "champ": "2380",
+                        "description": "Date/time/period",
+                        "format": "C an..35",
+                        "valeur": "M",
+                        "usage": ": 20150531"
+                    },
+                    {
+                        "champ": "2379",
+                        "description": "Date/time/period format qualifier",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": ":102'"
+                    }
+                ]
+            },
+            {
+                "groupe": "C507",
+                "description": "Date/time/period",
+                "champs": [
+                    {
+                        "champ": "2005",
+                        "description": "Date/time/period qualifier",
+                        "format": "M an..3",
+                        "valeur": "M",
+                        "usage": "+140"
+                    },
+                    {
+                        "champ": "2380",
+                        "description": "Date/time/period",
+                        "format": "C an..35",
+                        "valeur": "M",
+                        "usage": ": 20170520"
+                    },
+                    {
+                        "champ": "2379",
+                        "description": "Date/time/period format qualifier",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": ":102'"
+                    }
+                ]
+            },
+            {
+                "groupe": "C507",
+                "description": "Date/time/period",
+                "champs": [
+                    {
+                        "champ": "2005",
+                        "description": "Date/time/period qualifier",
+                        "format": "M an..3",
+                        "valeur": "M",
+                        "usage": "+171"
+                    },
+                    {
+                        "champ": "2380",
+                        "description": "Date/time/period",
+                        "format": "C an..35",
+                        "valeur": "M",
+                        "usage": ":20170324"
+                    },
+                    {
+                        "champ": "2379",
+                        "description": "Date/time/period format qualifier",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": ":102'"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "FII",
+        "description": "Financial institution information",
+        "elements": [
+            {
+                "champ": "3035",
+                "description": "Party qualifier",
+                "format": "M an..3",
+                "valeur": "+RH",
+                "usage": "RH = Seller's financial institution"
+            },
+            {
+                "groupe": "C078",
+                "description": "Account holder identification",
+                "champs": [
+                    {
+                        "champ": "3194",
+                        "description": "Account holder identifier",
+                        "format": "M an..35",
+                        "valeur": "+CZ600100000000",
+                        "usage": "IBAN"
+                    },
+                    {
+                        "champ": "3192",
+                        "description": "Account holder name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3192",
+                        "description": "Account holder name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C088",
+                "description": "Institution identification",
+                "champs": [
+                    {
+                        "champ": "3433",
+                        "description": "Institution name identification",
+                        "format": "c an..11",
+                        "valeur": "KOMBCZPPXXX",
+                        "usage": "SWIFT/BIC"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3434",
+                        "description": "Institution branch number",
+                        "format": "C an..17",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3432",
+                        "description": "Institution name",
+                        "format": "C an..70",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3436",
+                        "description": "Institution branch place",
+                        "format": "C an..70",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3207",
+                        "description": "Country",
+                        "format": "C an..3",
+                        "valeur": "+FR",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "FTX",
+        "description": "Free text",
+        "elements": [
+            {
+                "champ": "4451",
+                "description": "Text subject code qualifier",
+                "format": "M an..3",
+                "valeur": "+REG",
+                "usage": "REG = Regulatory Information"
+            },
+            {
+                "champ": "4453",
+                "description": "Free text function code",
+                "format": "C an..3",
+                "valeur": "+",
+                "usage": "Not used"
+            },
+            {
+                "groupe": "C107",
+                "description": "Text reference",
+                "champs": [
+                    {
+                        "champ": "4441",
+                        "description": "Free text description code",
+                        "format": "M an..3",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C108",
+                "description": "Text literal",
+                "champs": [
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "M an..70",
+                        "valeur": "+ FAURECIA",
+                        "usage": "Trading name of the seller"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an..70",
+                        "valeur": ":SAS",
+                        "usage": "Type of company"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": ": AU CAPITAL",
+                        "usage": "Amount of share capital & currency"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": ": : 071 502 397",
+                        "usage": "Id n° of trade register and name of city"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": "",
+                        "usage": "Text line 5"
+                    },
+                    {
+                        "champ": "3453",
+                        "description": "Language name code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "4447",
+                        "description": "Free text format code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "champ": "4451",
+                "description": "Text subject code qualifier",
+                "format": "M an..3",
+                "valeur": "+AAI",
+                "usage": "AAI = General information"
+            },
+            {
+                "champ": "4453",
+                "description": "Free text function code",
+                "format": "C an..3",
+                "valeur": "+",
+                "usage": "Not used"
+            },
+            {
+                "groupe": "C107",
+                "description": "Text reference",
+                "champs": [
+                    {
+                        "champ": "4441",
+                        "description": "Free text description code",
+                        "format": "M an..3",
+                        "valeur": "+",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C108",
+                "description": "Text literal",
+                "champs": [
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "M an..",
+                        "valeur": "+TVA ACQ",
+                        "usage": "Nature of VAT"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": ":CONDITI",
+                        "usage": "Discount terms in case of anticipated payment"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": ":CONDITI",
+                        "usage": "Discount terms in case of anticipated payment"
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": ":PENALTIE",
+                        "usage": "Penalties for delayed payments."
+                    },
+                    {
+                        "champ": "4440",
+                        "description": "Free text",
+                        "format": "C an.. 70",
+                        "valeur": "",
+                        "usage": "Text line 5"
+                    },
+                    {
+                        "champ": "3453",
+                        "description": "Language name code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "4447",
+                        "description": "Free text format code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "IMD",
+        "description": "Item description",
+        "elements": [
+            {
+                "champ": "7077",
+                "description": "Item description type, coded",
+                "format": "C an..3",
+                "valeur": "C",
+                "usage": "+"
+            },
+            {
+                "champ": "7081",
+                "description": "Item characteristic, coded",
+                "format": "C an..3",
+                "valeur": "N",
+                "usage": ""
+            },
+            {
+                "groupe": "C273",
+                "description": "Item Description",
+                "champs": [
+                    {
+                        "champ": "7009",
+                        "description": "Item description identification",
+                        "format": "C an..17",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "7008",
+                        "description": "Item description",
+                        "format": "C an..35",
+                        "valeur": "M",
+                        "usage": ":SMF CTR FACIA PAINTE"
+                    },
+                    {
+                        "champ": "7008",
+                        "description": "Item description",
+                        "format": "C an..35",
+                        "valeur": "C",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "LIN",
+        "description": "Line item",
+        "elements": [
+            {
+                "champ": "1082",
+                "description": "Line item number",
+                "format": "C n..6",
+                "valeur": "+1",
+                "usage": "Sequential number generated by the sender to"
+            },
+            {
+                "champ": "1229",
+                "description": "Action request/notification,",
+                "format": "C an..3",
+                "valeur": "",
+                "usage": "Not used"
+            },
+            {
+                "groupe": "C212",
+                "description": "Item number identification",
+                "champs": [
+                    {
+                        "champ": "7140",
+                        "description": "Item number",
+                        "format": "M an..35",
+                        "valeur": "+1406092XNB",
+                        "usage": "FAURECIA part number"
+                    },
+                    {
+                        "champ": "7143",
+                        "description": "Item number type, coded",
+                        "format": "C an..3",
+                        "valeur": ":IN'",
+                        "usage": "IN =Buyer's item number"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "LOC",
+        "description": "Place/location identification",
+        "elements": [
+            {
+                "champ": "3227",
+                "description": "Place/location qualifier",
+                "format": "M an..3",
+                "valeur": "M",
+                "usage": "+11"
+            },
+            {
+                "groupe": "C517",
+                "description": "Location identification",
+                "champs": [
+                    {
+                        "champ": "3225",
+                        "description": "Place/location identification",
+                        "format": "M an..25",
+                        "valeur": "M",
+                        "usage": "+1213-R093'"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3224",
+                        "description": "Place/location",
+                        "format": "C an..70",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "MEA",
+        "description": "Measurements",
+        "elements": [
+            {
+                "champ": "6311",
+                "description": "Measurement application qualifier",
+                "format": "M an ..3",
+                "valeur": "",
+                "usage": "+PD"
+            },
+            {
+                "groupe": "C502",
+                "description": "MEASUREMENT DETAILS",
+                "champs": [
+                    {
+                        "champ": "6313",
+                        "description": "Measurement dimension, coded",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": "+AAL"
+                    },
+                    {
+                        "champ": "6321",
+                        "description": "Measurement significance, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "6155",
+                        "description": "Measurement attribute, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "6154",
+                        "description": "Measurement attribute",
+                        "format": "C an..70",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C174",
+                "description": "VALUE/RANGE",
+                "champs": [
+                    {
+                        "champ": "6411",
+                        "description": "Measure unit qualifier",
+                        "format": "M an..3",
+                        "valeur": "M",
+                        "usage": "+KGM"
+                    },
+                    {
+                        "champ": "6314",
+                        "description": "Measurement value",
+                        "format": "C n ..18",
+                        "valeur": "M",
+                        "usage": ":8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "MOA",
+        "description": "Monetary amount",
+        "elements": [
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+203",
+                        "usage": "203 = Invoice item amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 322.8'",
+                        "usage": "Value of item amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = Invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+203",
+                        "usage": "203 = Invoice item amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 322.8'",
+                        "usage": "Value of item amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = Home currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+79",
+                        "usage": "79 = Total line items amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 3897.66'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = Invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+79",
+                        "usage": "79 = Total line items amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 3897.66'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+77",
+                        "usage": "77 = invoice line item amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 4677.19'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = Invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+77",
+                        "usage": "77 = invoice line item amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 4677.19'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = Home currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+125",
+                        "usage": "125 = taxable amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 3897.66'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = Invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+125",
+                        "usage": "125 = taxable amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 3897.66'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = Home currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+176",
+                        "usage": "176 = total amount of message duty/tax/fee amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 779.53'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = Invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+176",
+                        "usage": "176 = total amount of message duty/tax/fee amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 779.53'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = Home currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+109",
+                        "usage": "109 = payment discount amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ":",
+                        "usage": "Payment discount amount"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+124",
+                        "usage": "124 = Tax amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 779.53'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":4",
+                        "usage": "4 = Invoicing currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+124",
+                        "usage": "124 = Tax amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 779.53'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = Home currency"
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+125",
+                        "usage": "125 = taxable amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": "",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C516",
+                "description": "MONETARY AMOUNT",
+                "champs": [
+                    {
+                        "champ": "5025",
+                        "description": "Monetary amount type qualifier",
+                        "format": "M an..3",
+                        "valeur": "+125",
+                        "usage": "125 = taxable amount"
+                    },
+                    {
+                        "champ": "5004",
+                        "description": "Monetary amount",
+                        "format": "C n...18",
+                        "valeur": ": 3897.66'",
+                        "usage": "Total line items amount"
+                    },
+                    {
+                        "champ": "6345",
+                        "description": "Currency identification code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "6343",
+                        "description": "Currency type code qualifier",
+                        "format": "C an..3",
+                        "valeur": ":3",
+                        "usage": "3 = Home currency"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "NAD",
+        "description": "Name and address",
+        "elements": [
+            {
+                "champ": "3035",
+                "description": "Party qualifier",
+                "format": "M an..3",
+                "valeur": "M",
+                "usage": "+BY"
+            },
+            {
+                "groupe": "C082",
+                "description": "Party identification details",
+                "champs": [
+                    {
+                        "champ": "3039",
+                        "description": "Party id. identification",
+                        "format": "M an..35",
+                        "valeur": "M",
+                        "usage": "+FR04"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "C",
+                        "usage": ":92"
+                    }
+                ]
+            },
+            {
+                "groupe": "C058",
+                "description": "Name and address",
+                "champs": [
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "M an..35",
+                        "valeur": "M",
+                        "usage": "+ PARC D'ACTIVITES"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": "C",
+                        "usage": ": HENIN-BEAUMONT"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": "C",
+                        "usage": ":FR"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": "C",
+                        "usage": ": 1213000000"
+                    }
+                ]
+            },
+            {
+                "groupe": "C080",
+                "description": "Party name",
+                "champs": [
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "M an..35",
+                        "valeur": "M",
+                        "usage": "+FAURECIA IND"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3045",
+                        "description": "Party name format, code",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C059",
+                "description": "Street",
+                "champs": [
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3164",
+                        "description": "City name",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": "+"
+                    },
+                    {
+                        "champ": "3229",
+                        "description": "Country sub-entity identification",
+                        "format": "C an..9",
+                        "valeur": "N",
+                        "usage": "+"
+                    },
+                    {
+                        "champ": "3251",
+                        "description": "Postcode identification",
+                        "format": "C an..9",
+                        "valeur": "N",
+                        "usage": "+"
+                    },
+                    {
+                        "champ": "3207",
+                        "description": "Country, coded",
+                        "format": "C an..3",
+                        "valeur": "C",
+                        "usage": "+"
+                    }
+                ]
+            },
+            {
+                "champ": "3035",
+                "description": "Party qualifier",
+                "format": "M an..3",
+                "valeur": "+SE",
+                "usage": "SE = Seller"
+            },
+            {
+                "groupe": "C082",
+                "description": "Party identification details",
+                "champs": [
+                    {
+                        "champ": "3039",
+                        "description": "Party id. identification",
+                        "format": "M an..35",
+                        "valeur": "+0931071502397",
+                        "usage": "Seller's identification. if not available default"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency,",
+                        "format": "C an..3",
+                        "valeur": ":10",
+                        "usage": "5 = ISO identification\n10 = ODETTE identification\n16 = DUNs number\n92 = assigned by Buyer"
+                    }
+                ]
+            },
+            {
+                "groupe": "C058",
+                "description": "Name and address",
+                "champs": [
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "M an..35",
+                        "valeur": "+ EMILE ZOLA",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ": 60114 MERU",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":FR",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ": 1258000000",
+                        "usage": "Address"
+                    }
+                ]
+            },
+            {
+                "groupe": "C080",
+                "description": "Party name",
+                "champs": [
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "M an..35",
+                        "valeur": "+FAURECIA INTE",
+                        "usage": "Seller’ name"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3045",
+                        "description": "Party name format, code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C059",
+                "description": "Street",
+                "champs": [
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3164",
+                        "description": "City name",
+                        "format": "C an..35",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3229",
+                        "description": "Country sub-entity identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3251",
+                        "description": "Postcode identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3207",
+                        "description": "Country, coded",
+                        "format": "C an..3",
+                        "valeur": "+FR'",
+                        "usage": "Seller's Country Code - see Codelist 3207"
+                    }
+                ]
+            },
+            {
+                "champ": "3035",
+                "description": "Party qualifier",
+                "format": "M an..3",
+                "valeur": "+FH",
+                "usage": "FH = Seller as officially registered"
+            },
+            {
+                "groupe": "C082",
+                "description": "Party identification details",
+                "champs": [
+                    {
+                        "champ": "3039",
+                        "description": "Party id. identification",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": "Seller's identification. if not available default"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency,",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": "5 = ISO identification\n10 = ODETTE identification\n16 = DUNs number\n92 = assigned by Buyer"
+                    }
+                ]
+            },
+            {
+                "groupe": "C058",
+                "description": "Name and address",
+                "champs": [
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "M an..35",
+                        "valeur": "+ EMILE ZOLA",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ": 60114 MERU",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":",
+                        "usage": "Address"
+                    }
+                ]
+            },
+            {
+                "groupe": "C080",
+                "description": "Party name",
+                "champs": [
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": "Seller’ name"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3045",
+                        "description": "Party name format, code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C059",
+                "description": "Street",
+                "champs": [
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3164",
+                        "description": "City name",
+                        "format": "C an..35",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3229",
+                        "description": "Country sub-entity identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3251",
+                        "description": "Postcode identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3207",
+                        "description": "Country, coded",
+                        "format": "C an..3",
+                        "valeur": "+",
+                        "usage": "Seller's Country Code - see Codelist 3207"
+                    }
+                ]
+            },
+            {
+                "champ": "3035",
+                "description": "Party qualifier",
+                "format": "M an..3",
+                "valeur": "+IV",
+                "usage": "IV = Invoicee party"
+            },
+            {
+                "groupe": "C082",
+                "description": "Party identification details",
+                "champs": [
+                    {
+                        "champ": "3039",
+                        "description": "Party id. identification",
+                        "format": "M an..35",
+                        "valeur": "+FR04",
+                        "usage": "Value assigned by Faurecia. See Annex 1"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency,",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C058",
+                "description": "Name and address",
+                "champs": [
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "M an..35",
+                        "valeur": "+ SJM - BP 40415",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ": 60114 MERU CE",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":PT",
+                        "usage": "Address"
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":SSC000FR04",
+                        "usage": "Address"
+                    }
+                ]
+            },
+            {
+                "groupe": "C080",
+                "description": "Party name",
+                "champs": [
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "M an..35",
+                        "valeur": "+ FAURECIA INDU",
+                        "usage": "Invoicee’s name"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3045",
+                        "description": "Party name format, code",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C059",
+                "description": "Street",
+                "champs": [
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3164",
+                        "description": "City name",
+                        "format": "C an..35",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3229",
+                        "description": "Country sub-entity identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3251",
+                        "description": "Postcode identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "3207",
+                        "description": "Country, coded",
+                        "format": "C an..3",
+                        "valeur": "+ PT'",
+                        "usage": "Invoicee's Country Code - see Codelist 3207"
+                    }
+                ]
+            },
+            {
+                "champ": "3035",
+                "description": "Party qualifier",
+                "format": "M an..3",
+                "valeur": "+CN",
+                "usage": ""
+            },
+            {
+                "groupe": "C082",
+                "description": "Party identification details",
+                "champs": [
+                    {
+                        "champ": "3039",
+                        "description": "Party id. identification",
+                        "format": "M an..35",
+                        "valeur": "+000242087914000119",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency,",
+                        "format": "C an..3",
+                        "valeur": ":5",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C058",
+                "description": "Name and address",
+                "champs": [
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "M an..35",
+                        "valeur": "+ PARC D?'ACTIVITES LE",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ":",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3124",
+                        "description": "Name and address line",
+                        "format": "C an..35",
+                        "valeur": ": 62256HENINBEAUMONT",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C080",
+                "description": "Party name",
+                "champs": [
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "M an..35",
+                        "valeur": "+ FAURECIA INDUSTRIES",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3036",
+                        "description": "Party name",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3045",
+                        "description": "Party name format, coded",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C059",
+                "description": "Street",
+                "champs": [
+                    {
+                        "champ": "3042",
+                        "description": "Street and number/p.o. box",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3164",
+                        "description": "City name",
+                        "format": "C an..35",
+                        "valeur": "+",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3229",
+                        "description": "Country sub-entity identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3251",
+                        "description": "Postcode identification",
+                        "format": "C an..9",
+                        "valeur": "+",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3207",
+                        "description": "Country, coded",
+                        "format": "C an..3",
+                        "valeur": "+FR'",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "PAT",
+        "description": "Payment terms basis",
+        "elements": [
+            {
+                "champ": "4279",
+                "description": "Payment terms type qualifier",
+                "format": "M",
+                "valeur": "",
+                "usage": "1 = basic, payment condition normally applied"
+            }
+        ]
+    },
+    {
+        "segment": "PIA",
+        "description": "Additional product id",
+        "elements": [
+            {
+                "champ": "4347",
+                "description": "Product id. function qualifier",
+                "format": "M an..3",
+                "valeur": "M",
+                "usage": "+1"
+            },
+            {
+                "groupe": "C212",
+                "description": "Item number identification",
+                "champs": [
+                    {
+                        "champ": "7140",
+                        "description": "Item number",
+                        "format": "C an..35",
+                        "valeur": "M",
+                        "usage": "+1406092XNB"
+                    },
+                    {
+                        "champ": "7143",
+                        "description": "Item number type, coded",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": ":SA'"
+                    }
+                ]
+            },
+            {
+                "groupe": "C212",
+                "description": "Item number identification",
+                "champs": [
+                    {
+                        "champ": "7140",
+                        "description": "Item number",
+                        "format": "C an..35",
+                        "valeur": "",
+                        "usage": "+Bad Qty"
+                    },
+                    {
+                        "champ": "7143",
+                        "description": "Item number type, coded",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": ":CRR"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "PRI",
+        "description": "Price details",
+        "elements": [
+            {
+                "groupe": "C509",
+                "description": "PRICE INFORMATION",
+                "champs": [
+                    {
+                        "champ": "5125",
+                        "description": "Price qualifier",
+                        "format": "M an..3",
+                        "valeur": "+AAA",
+                        "usage": "AAA = Calculation net"
+                    },
+                    {
+                        "champ": "5118",
+                        "description": "Price",
+                        "format": "C n ..15",
+                        "valeur": ":8070",
+                        "usage": "Unit price amount in price currency units"
+                    },
+                    {
+                        "champ": "5375",
+                        "description": "Price type, coded",
+                        "format": "C an..3",
+                        "valeur": ":",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "5387",
+                        "description": "Price type qualifier",
+                        "format": "C an..3",
+                        "valeur": ":AAA",
+                        "usage": "AAA = Reference price"
+                    },
+                    {
+                        "champ": "5284",
+                        "description": "Unit price basis",
+                        "format": "C n... 9",
+                        "valeur": ":1000",
+                        "usage": "Basis on which the unit price/rate applies"
+                    },
+                    {
+                        "champ": "6411",
+                        "description": "Measure unit qualifier",
+                        "format": "C an..3",
+                        "valeur": ":PCE'",
+                        "usage": "Code specifiy the unit of measuremnt, by default ‘PCE’"
+                    },
+                    {
+                        "champ": "5213",
+                        "description": "Sub-line price change, coded",
+                        "format": "C an..3",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "QTY",
+        "description": "Quantity",
+        "elements": [
+            {
+                "groupe": "C186",
+                "description": "Quantity details",
+                "champs": [
+                    {
+                        "champ": "6063",
+                        "description": "Quantity qualifier",
+                        "format": "M an..3",
+                        "valeur": "+47",
+                        "usage": "47 = Invoiced quantity"
+                    },
+                    {
+                        "champ": "6060",
+                        "description": "Quantity",
+                        "format": "M n..15",
+                        "valeur": ":40",
+                        "usage": "Invoiced quantity value"
+                    },
+                    {
+                        "champ": "6411",
+                        "description": "Measure unit qualifier",
+                        "format": "C an..3",
+                        "valeur": ":PCE'",
+                        "usage": "Measure unit qualifier, by default PCE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "RFF",
+        "description": "Reference",
+        "elements": [
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "",
+                        "valeur": "+IV",
+                        "usage": "IV = Original Invoice number"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C",
+                        "valeur": ":45071502397'",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1156",
+                        "description": "Line Number",
+                        "format": "C",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "4000",
+                        "description": "Reference version number",
+                        "format": "C",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "M an..3",
+                        "valeur": "+VA",
+                        "usage": "VA = VAT registration number"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C an..35",
+                        "valeur": ": FR72420879140'",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1156",
+                        "description": "Line Number",
+                        "format": "C",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "4000",
+                        "description": "Reference version number",
+                        "format": "C",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "M an..3",
+                        "valeur": "+ADE",
+                        "usage": "ADE = Seller’s account number Qualifier"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C an..35",
+                        "valeur": ":0000654321'",
+                        "usage": "Acount number assigned to a supplier by"
+                    }
+                ]
+            },
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "M an..3",
+                        "valeur": "+VA",
+                        "usage": "VA = VAT registration number"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C an..35",
+                        "valeur": ": FR45071502397'",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1156",
+                        "description": "Line Number",
+                        "format": "C",
+                        "valeur": "",
+                        "usage": "Not used"
+                    },
+                    {
+                        "champ": "4000",
+                        "description": "Reference version number",
+                        "format": "C",
+                        "valeur": "",
+                        "usage": "Not used"
+                    }
+                ]
+            },
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "M an..3",
+                        "valeur": "+AAK",
+                        "usage": "AAK = despatch advice number"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C an..35",
+                        "valeur": "52985317'",
+                        "usage": "Despatch advice number"
+                    }
+                ]
+            },
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "M an..3",
+                        "valeur": "+ON",
+                        "usage": "ON = Buyer Order number (purchase)"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C an..35",
+                        "valeur": ":5500252786'",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C506",
+                "description": "Reference",
+                "champs": [
+                    {
+                        "champ": "1153",
+                        "description": "Reference qualifier",
+                        "format": "M an..3",
+                        "valeur": "+MA",
+                        "usage": "MA = Manifest number"
+                    },
+                    {
+                        "champ": "1154",
+                        "description": "Reference number",
+                        "format": "C an..35",
+                        "valeur": ":0251717613'",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "TAX",
+        "description": "Duty/tax/fee details",
+        "elements": [
+            {
+                "champ": "5283",
+                "description": "Duty/tax/fee function qualifier",
+                "format": "M an ..3",
+                "valeur": "M",
+                "usage": "+7"
+            },
+            {
+                "groupe": "C241",
+                "description": "DUTY/TAX/FEE TYPE",
+                "champs": [
+                    {
+                        "champ": "5153",
+                        "description": "Duty/tax/fee type, coded",
+                        "format": "C an ..3",
+                        "valeur": "M",
+                        "usage": "+VAT"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an ..3",
+                        "valeur": "N",
+                        "usage": "+"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an ..3",
+                        "valeur": "N",
+                        "usage": "+"
+                    },
+                    {
+                        "champ": "5152",
+                        "description": "Duty/tax/fee type",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": "+"
+                    }
+                ]
+            },
+            {
+                "groupe": "C533",
+                "description": "DUTY/TAX/FEE ACCOUNT DETAIL",
+                "champs": [
+                    {
+                        "champ": "5289",
+                        "description": "Duty/tax/fee account identification",
+                        "format": "M an..6",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "5286",
+                        "description": "Duty/tax/fee assessment basis",
+                        "format": "C an..15",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C243",
+                "description": "DUTY/TAX/FEE DETAIL",
+                "champs": [
+                    {
+                        "champ": "5279",
+                        "description": "Duty/tax/fee rate identification",
+                        "format": "C an..7",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "5278",
+                        "description": "Duty/tax/fee rate",
+                        "format": "C an..17",
+                        "valeur": "M",
+                        "usage": ":20.00"
+                    },
+                    {
+                        "champ": "5273",
+                        "description": "Duty/tax/fee rate basis identification",
+                        "format": "C an..12",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "5305",
+                        "description": "Duty/tax/fee category, coded",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": "+200"
+                    },
+                    {
+                        "champ": "3446",
+                        "description": "Party tax identification number",
+                        "format": "C an..20",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "champ": "5283",
+                "description": "Duty/tax/fee function qualifier",
+                "format": "M an ..3",
+                "valeur": "M",
+                "usage": "+7"
+            },
+            {
+                "groupe": "C241",
+                "description": "DUTY/TAX/FEE TYPE",
+                "champs": [
+                    {
+                        "champ": "5153",
+                        "description": "Duty/tax/fee type, coded",
+                        "format": "C an ..3",
+                        "valeur": "M",
+                        "usage": "+VAT"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an ..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an ..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "5152",
+                        "description": "Duty/tax/fee type",
+                        "format": "C an..35",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C533",
+                "description": "DUTY/TAX/FEE ACCOUNT DETAIL",
+                "champs": [
+                    {
+                        "champ": "5289",
+                        "description": "Duty/tax/fee account identification",
+                        "format": "M an..6",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "5286",
+                        "description": "Duty/tax/fee assessment basis",
+                        "format": "C an..15",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "C243",
+                "description": "DUTY/TAX/FEE DETAIL",
+                "champs": [
+                    {
+                        "champ": "5279",
+                        "description": "Duty/tax/fee rate identification",
+                        "format": "C an..7",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ":"
+                    },
+                    {
+                        "champ": "5278",
+                        "description": "Duty/tax/fee rate",
+                        "format": "C an..17",
+                        "valeur": "M",
+                        "usage": ":20.00"
+                    },
+                    {
+                        "champ": "5273",
+                        "description": "Duty/tax/fee rate basis identification",
+                        "format": "C an..12",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "1131",
+                        "description": "Code list qualifier",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "3055",
+                        "description": "Code list responsible agency, coded",
+                        "format": "C an..3",
+                        "valeur": "N",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "5305",
+                        "description": "Duty/tax/fee category, coded",
+                        "format": "C an..3",
+                        "valeur": "M",
+                        "usage": "+200"
+                    },
+                    {
+                        "champ": "3446",
+                        "description": "Party tax identification number",
+                        "format": "C an..20",
+                        "valeur": "N",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "UNB",
+        "description": "Interchange header",
+        "elements": [
+            {
+                "groupe": "S001",
+                "description": "SYNTAX IDENTIFIER",
+                "champs": [
+                    {
+                        "champ": "0001",
+                        "description": "Syntax identifier",
+                        "format": "M a..4",
+                        "valeur": "+UNOA",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0002",
+                        "description": "Syntax version number",
+                        "format": "M n..1",
+                        "valeur": ":3",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "S002",
+                "description": "INTERCHANGE SENDER",
+                "champs": [
+                    {
+                        "champ": "0004",
+                        "description": "Sender identification",
+                        "format": "M an..35",
+                        "valeur": "+O093100000875450157FR23",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0007",
+                        "description": "Partner identification code",
+                        "format": "",
+                        "valeur": "",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0008",
+                        "description": "Address for reverse routing",
+                        "format": "C an..14",
+                        "valeur": "",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "S003",
+                "description": "INTERCHANGE RECIPIENT",
+                "champs": [
+                    {
+                        "champ": "0010",
+                        "description": "Recipient identification",
+                        "format": "M an..35",
+                        "valeur": "+",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0007",
+                        "description": "Partner identification code",
+                        "format": "C an..4",
+                        "valeur": ":",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0014",
+                        "description": "Routing address",
+                        "format": "C an..14",
+                        "valeur": ":",
+                        "usage": ""
+                    }
+                ]
+            },
+            {
+                "groupe": "S004",
+                "description": "DATE/TIME OF PREPARATION",
+                "champs": [
+                    {
+                        "champ": "0017",
+                        "description": "Date of preparation",
+                        "format": "M n6",
+                        "valeur": "+170325",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0019",
+                        "description": "Time of preparation",
+                        "format": "M n4",
+                        "valeur": ": 2242",
+                        "usage": ""
+                    },
+                    {
+                        "champ": "0020",
+                        "description": "Interchange control reference",
+                        "format": "M an..14",
+                        "valeur": "+0010753’",
+                        "usage": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "UNH",
+        "description": "Message header",
+        "elements": [
+            {
+                "champ": "0062",
+                "description": "Message reference number",
+                "format": "M an..14",
+                "valeur": "+1",
+                "usage": "Message control number assigned by the sender of the"
+            },
+            {
+                "groupe": "S009",
+                "description": "MESSAGE IDENTIFIER",
+                "champs": [
+                    {
+                        "champ": "0065",
+                        "description": "Message type identifier",
+                        "format": "M an..6",
+                        "valeur": "+INVOIC",
+                        "usage": "INVOIC = Invoice Message"
+                    },
+                    {
+                        "champ": "0052",
+                        "description": "Message type version number",
+                        "format": "M an..3",
+                        "valeur": ":D",
+                        "usage": "D = Draft version/UN/EDIFACT Directory"
+                    },
+                    {
+                        "champ": "0054",
+                        "description": "Message type release number",
+                        "format": "M an..3",
+                        "valeur": ":96A",
+                        "usage": "96A =Release 1996 – A"
+                    },
+                    {
+                        "champ": "0051",
+                        "description": "Controlling agency",
+                        "format": "M an..2",
+                        "valeur": ":UN",
+                        "usage": "UN =UN/ECE/TRADE/WP.4"
+                    },
+                    {
+                        "champ": "0057",
+                        "description": "Association assigned code",
+                        "format": "C an..6",
+                        "valeur": ":A14051'",
+                        "usage": "A14051"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "segment": "UNS",
+        "description": "Section control",
+        "elements": [
+            {
+                "champ": "0081",
+                "description": "Section identification",
+                "format": "M a1",
+                "valeur": "+S'",
+                "usage": "S = Detail/summary section separation"
+            }
+        ]
+    },
+    {
+        "segment": "UNT",
+        "description": "Message trailer",
+        "elements": [
+            {
+                "champ": "0074",
+                "description": "Number of segments in a",
+                "format": "M n..6",
+                "valeur": "+99",
+                "usage": ""
+            },
+            {
+                "champ": "0062",
+                "description": "Message reference number",
+                "format": "M an..14",
+                "valeur": "+1’",
+                "usage": ""
+            }
+        ]
+    },
+    {
+        "segment": "UNZ",
+        "description": "Interchange trailer",
+        "elements": [
+            {
+                "champ": "0036",
+                "description": "Interchange control count",
+                "format": "M n..6",
+                "valeur": "+1",
+                "usage": ""
+            },
+            {
+                "champ": "0020",
+                "description": "Interchange control reference",
+                "format": "M an..14",
+                "valeur": "+001075’",
+                "usage": ""
+            }
+        ]
+    }
+]

@@ -1,0 +1,72 @@
+    {
+        "segment": "UNH",
+        "description": "Message header",
+        "elements": [
+            {
+                "champ": "0062",
+                "description": "Message reference number",
+                "format": "M an..14",
+                "valeur": "+0001"
+            },
+            {
+                "groupe": "S009",
+                "description": "MESSAGE IDENTIFIER",
+                "champs": [
+                    {
+                        "champ": "0065",
+                        "description": "Message type identifier",
+                        "format": "M an..6",
+                        "valeur": "+INVOIC"
+                    },
+                    {
+                        "champ": "0052",
+                        "description": "Message type version number",
+                        "format": "M an..3",
+                        "valeur": ":D"
+                    },
+                    {
+                        "champ": "0054",
+                        "description": "Message type release number",
+                        "format": "M an..3",
+                        "valeur": ":96A"
+                    },
+                    {
+                        "champ": "0051",
+                        "description": "Controlling agency",
+                        "format": "M an..2",
+                        "valeur": ":UN"
+                    },
+                    {
+                        "champ": "0057",
+                        "description": "Association assigned code",
+                        "format": "C an..6",
+                        "valeur": ":A14051"
+                    }
+                ]
+            },
+            {
+                "champ": "0068",
+                "description": "Common access reference",
+                "format": "C an..35",
+                "valeur": ""
+            },
+            {
+                "groupe": "S010",
+                "description": "STATUS OF THE TRANSFER",
+                "champs": [
+                    {
+                        "champ": "0070",
+                        "description": "Sequence message transfer number",
+                        "format": "M n..2",
+                        "valeur": ""
+                    },
+                    {
+                        "champ": "0073",
+                        "description": "First/last sequence message transfer identifier",
+                        "format": "C a1",
+                        "valeur": ""
+                    }
+                ]
+            }
+        ]
+    }

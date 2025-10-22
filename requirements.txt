@@ -1,0 +1,22 @@
+# Dépendances pour l'extracteur EDI adaptatif multi-format
+# Supporte : Faurecia EDI Guideline, VDA 4932 (Automotive standard)
+
+# Pour l'extraction de texte et tableaux depuis PDF
+pdfplumber>=0.10.0
+
+# Alternative pour la lecture de PDF
+PyPDF2>=3.0.0
+
+# Modules Python standard utilisés (pas besoin d'installation)
+# - json : Gestion des exports JSON
+# - re : Expressions régulières pour parsing
+# - pathlib : Gestion des chemins de fichiers
+# - typing : Annotations de types
+
+# Installation :
+pip install -r requirements.txt
+
+# Versions testées :
+# - Python 3.10+
+# - pdfplumber 0.10.0+
+# - PyPDF2 3.0.0+
